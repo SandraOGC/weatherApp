@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 const Location = ({city}) => {
     //Destructuring (opcion 1)
@@ -13,4 +14,7 @@ const Location = ({city}) => {
     );
 };
 
+Location.PropTypes = {
+  city: PropTypes.string.isRequired,
+}
 export default Location;
