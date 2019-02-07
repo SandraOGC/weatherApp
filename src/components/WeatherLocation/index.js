@@ -1,20 +1,12 @@
-import React from "react";
-import PropTypes from 'prop-types';
+import React from 'react';
+import Location from './Location';
+import WeatherData from './WeatherData';
 
-const Location = ({city}) => {
-    //Destructuring (opcion 1)
-    //const { city } = props;
-    
-    //const city = props.city; (opcion 2)
+const WeatherLocation = () => (
+    <div>
+        <Location city={"España"}></Location>
+        <WeatherData />
+    </div>
+);
 
-    return (
-        <div>
-            <h1>{city}</h1>
-        </div>
-    );
-};
-
-Location.PropTypes = {
-  city: PropTypes.string.isRequired,
-}
-export default Location;
+export default WeatherLocation;
