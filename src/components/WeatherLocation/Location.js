@@ -8,7 +8,7 @@ const Location = ({city}) => {
     //const city = props.city; (opcion 2)
 
     return (
-        <div>
+        <div className="locationCont">
             <h1>{city}</h1>
         </div>
     );
